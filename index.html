@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Loan Calculator</title>
+</head>
+
+<body>
+  <div class="container-fluid div class flex-cntainer">
+    <h1>Personal Loan Calculator</h1>
+
+
+    <div class="loan-calculator" text:center>
+      <h4>loan-calculator</h4>
+      <p class="container">Currency:</p>
+      <button><i class="fa-solid fa-dollar-sign"></i></button>
+      <button><i class="fa-solid fa-euro-sign"></i></button>
+      <button><i class="fa-solid fa-sterling-sign"></i></button>
+      <button><i class="fa-solid fa-indian-rupee-sign"></i></button>
+      <button><i class="fa-solid fa-yen-sign"></i></button>
+      <p>Loan amount:</p>
+      <input type="number" />
+      <p>Annual interest Rate:</p>
+      <input type="number" />
+      </br>
+      Years:
+      </br>
+      <input type="number" placeholder="0">
+      </br>
+      Months:
+      </br>
+      <input type="number" placeholder="0">
+      <p >Loan Start Date?</p>
+      <input type="date" />
+      <p>Initial Deposit?(Optional)</p>
+      <input type="number" />
+      <p>Extra Fees?(Optional)</p>
+      <input type="number" />
+      <p>add to loan?</p>
+      <input type="checkbox" />
+      <p>Balloon payment at the end?(Optional)</p>
+      <input type="text" />
+
+      <button>Calculate</button>
+    </div>
+    <P>Loan Summary</P>
+    <div class="monthly-payment d-grid container-fluid border border-dark mx-auto">
+      <div class="row">
+        <div class="col border">
+          <div class="row">
+          
+            <div class="col">Monthly payment</div>
+            <div class="col">4000</div>
+          </div>
+          <div class="row">
+            <div class="col">No of payment</div>
+            <div class="col">4000</div>
+          </div>
+          <div class="row">
+            <div class="col">Estimated pay Off</div>
+            <div class="col">600</div>
+          </div>
+          <div class="row">
+            <div class="col">Balloon at end</div>
+            <div class="col">800</div>
+          </div>
+        </div>
+        <div class="col border">
+
+          <div class="row">
+            <div class="col">Toatl Interest</div>
+            <div class="col">100</div>
+          </div>
+          <div class="row">
+            <div class="col">Total to be paid</div>
+            <div class="col">003</div>
+
+            <div class="row">
+              <div class="col">Effective to be paid</div>
+              <div class="col">400</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+
+</html>
