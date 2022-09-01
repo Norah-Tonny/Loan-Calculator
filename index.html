@@ -26,49 +26,58 @@
     <div class="loan-calculator container-fluid  border  ">
 
       <div class="currency-loan">
-        <p class="container">Currency:</p>
-        <div class=" currency text-align-center">
-          <button id="btn"><i class="fa-solid fa-dollar-sign"></i></button>
-          <button id="btn"><i class="fa-solid fa-euro-sign"></i></button>
-          <button id="btn"><i class="fa-solid fa-sterling-sign"></i></button>
-          <button id="btn"><i class="fa-solid fa-indian-rupee-sign"></i></button>
-          <button id="btn"><i class="fa-solid fa-yen-sign"></i></button>
+
+
+        <div id="currency">
+          <p class="container">Currency:</p>
+          <div id="currency_icon" class=" currency text-align-center i">
+            <button class="btn1" id="btn"> <i class="fa-solid fa-dollar-sign"></i></button>
+            <button class="btn2" id="btn"><i class="fa-solid fa-euro-sign"></i></button>
+            <button class="btn3" id="btn"><i class="fa-solid fa-sterling-sign"></i></button>
+            <button class="btn4" id="btn"><i class="fa-solid fa-indian-rupee-sign"></i></button>
+            <button class="btn5" id="btn"><i class="fa-solid fa-yen-sign"></i></button>
+          </div>
+          <p>Loan amount:</p>
+          <input type="number" width="30%" id="amount" />
+          <p>Annual interest Rate:</p>
+          <input type="number" id="interest_rate" />
+          </br>
+          <div class="duration">
+            <label id="years">Years:</label>
+            <label id="months">Months:</label>
+
+          </div>
+
+          <input type="number" placeholder="0" width="20%" >
+
+          <input type="number" placeholder="0" width="20%" >
+          
+          <p>Loan Start Date?</p>
+
+          <input type="date" id="started_date" />
         </div>
-        <p >Loan amount:</p>
-        <input type="number" width="30%" id="amount" />
-        <p >Annual interest Rate:</p>
-        <input type="number" id="interest_rate"/>
-        </br>
-        <div class="duration d-flex">
-          <label id ="years">Years:</label>
 
-
-          <input type="number" placeholder="0" width="10%" id="input3">
-
-          <label id="months">Months:</label>
-
-          <input type="number" placeholder="0" width="10%" id="input4">
-
-
-        </div>
-        <p >Loan Start Date?</p>
-
-        <input type="date" id="started_date" />
         <div class="single-field">
 
-          <p >Initial Deposit? <label1>(Optional)</label1></p>
+          <p>Initial Deposit? <label1>(Optional)</label1>
+          </p>
 
-          <input type="number"id="deposit" />
-          <p >Extra Fees?(Optional)</p>
-          <input type="number" width="30%" id="extra_fee" />
-          <label>add to loan?</label><input type="checkbox" />
+          <input type="number" id="deposit" />
 
-          <p>Balloon payment at the end?<label1>(Optional)</label1></p>
-          <input type="text"  id="balloon_end"/>
+          <p>Extra Fees?(Optional)</p>
+          <input type="number" id="extra_fee" />
+          <label1>add to loan?</label1>
+          <input type="checkbox" />
+
+          <p>Balloon payment at the end?<label1>(Optional)</label1>
+          </p>
+          <input type="text" id="balloon_end" />
         </div>
         <div class="calculator">
-          <button id="calc" class="Calc"><i class="fa-solid fa-calculator-simple"></i>Calculate</button>
+          <div id="calc">
 
+            <button class="Calc"><i class="fa-solid fa-calculator-simple"></i>Calculate</button>
+          </div>
           <h3 id="payment"></h3>
 
 
@@ -116,17 +125,17 @@
         <div class="row">
           <div class="col"><img src="images/total paid.png" alt="total paid" width="50%"></div>
           <div class="col">Total to be paid</div>
-          <div class="col">003</div>
-</div>
-          <div class="row">
-            <div class="col"><img src="images/effective-icon.png" alt="effective-icon" width="50%"></div>
-            <div class="col">Effective to be paid</div>
-            <div class="col">400</div>
+          <div class="col" id="Value_number">003</div>
+        </div>
+        <div class="row">
+          <div class="col"><img src="images/effective-icon.png" alt="effective-icon" width="50%"></div>
+          <div class="col">Effective to be paid</div>
+          <div class="col">400</div>
 
-          </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   </div>
   <script src="./Js/app.js"></script>
