@@ -30,7 +30,7 @@
 
         <div id="currency">
           <p class="container">Currency:</p>
-          <div id="currency_icon" class=" currency text-align-center i">
+          <div id="currency_icon" class=" currency d-flex justify-content-center align-items-center">
             <button class="btn1" id="btn"> <i class="fa-solid fa-dollar-sign"></i></button>
             <button class="btn2" id="btn"><i class="fa-solid fa-euro-sign"></i></button>
             <button class="btn3" id="btn"><i class="fa-solid fa-sterling-sign"></i></button>
@@ -42,16 +42,17 @@
           <p>Annual interest Rate:</p>
           <input type="number" placeholder="%" id="interest_rate" />
           </br>
-          <div class="duration">
+          <div class="duration d-flex justify-content-start gap-5">
             <label >Years:</label>
-            <label >Months:</label>
+            <label class="ms-5">Months:</label>
 
           </div>
 
+         <div class="d-flex justify-content-start gap-3">
           <input id="years" type="number" value="1" placeholder="0" width="20%" >
 
           <input id="months" type="number" value="0" width="20%" >
-          
+        </div>
           <p>Loan Start Date?</p>
 
           <input type="date" id="started_date" />
@@ -109,7 +110,7 @@
           <div class="col">Estimated pay Off</div>
           <div class="col" id="payoff">xxx</div>
         </div>
-        
+
       </div>
       <div class="col">
 
