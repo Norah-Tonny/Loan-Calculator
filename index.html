@@ -40,17 +40,17 @@
           <p>Loan amount:</p>
           <input type="number" width="30%" id="amount" />
           <p>Annual interest Rate:</p>
-          <input type="number" id="interest_rate" />
+          <input type="number" placeholder="%" id="interest_rate" />
           </br>
           <div class="duration">
-            <label id="years">Years:</label>
-            <label id="months">Months:</label>
+            <label >Years:</label>
+            <label >Months:</label>
 
           </div>
 
-          <input type="number" placeholder="0" width="20%" >
+          <input id="years" type="number" value="1" placeholder="0" width="20%" >
 
-          <input type="number" placeholder="0" width="20%" >
+          <input id="months" type="number" value="0" width="20%" >
           
           <p>Loan Start Date?</p>
 
@@ -78,7 +78,7 @@
 
             <button class="Calc"><i class="fa-solid fa-calculator-simple"></i>Calculate</button>
           </div>
-          <h3 id="payment"></h3>
+        
 
 
 
@@ -96,41 +96,41 @@
 
           <div class="col"><img src="images/monthly-payment.jpg" alt="monthly-payment" width="80%"> </div>
           <div class="col">Monthly payment</div>
-          <div class="col">4000</div>
+          <div class="col" id="payment">xxx</div>
 
         </div>
         <div class="row">
           <div class="col loan-summary"><img src="images/number of payment.png" alt="no of payment" width="40%"></div>
           <div class="col">No of payment</div>
-          <div class="col">4000</div>
+          <div class="col" id="noPayment">xxx</div>
         </div>
         <div class="row">
           <div class="col loan-summary"><img src="images/estimated-icon.png" alt="estimated-icon" width="50%"></div>
           <div class="col">Estimated pay Off</div>
-          <div class="col">600</div>
+          <div class="col" id="payoff">xxx</div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col"><img src="images/ballon-icon.jpeg" alt="ballon-icon" width="80%"></div>
           <div class="col">Balloon at end</div>
-          <div class="col">800</div>
-        </div>
+          <div class="col" id="balloon">xxx</div>
+        </div> -->
       </div>
       <div class="col">
 
         <div class="row">
           <div class="col"><img src="images/interest.jpeg" alt="Interest" width="80%"></div>
           <div class="col">Toatl Interest</div>
-          <div class="col">100</div>
+          <div class="col" id="interest">xxx</div>
         </div>
         <div class="row">
           <div class="col"><img src="images/total paid.png" alt="total paid" width="50%"></div>
           <div class="col">Total to be paid</div>
-          <div class="col" id="Value_number">003</div>
+          <div class="col" id="paid">xxx</div>
         </div>
         <div class="row">
           <div class="col"><img src="images/effective-icon.png" alt="effective-icon" width="50%"></div>
           <div class="col">Effective to be paid</div>
-          <div class="col">400</div>
+          <div class="col" id="estimated">xxx</div>
 
         </div>
       </div>
