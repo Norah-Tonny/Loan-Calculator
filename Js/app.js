@@ -44,7 +44,7 @@ const estimatedValue=((amountValue)/parseInt(years.value)+parseInt(months.value)
   noPayment.innerText = ` ${repaymentMonths} months`;
 
     console.log(estimatedValue)
-    estimated.innerText = `Ksh. ${amountValue / parseInt(years.value) + parseInt(months.value) - (interestValue)}`;
+    estimated.innerText = `Ksh. ${amountValue / parseInt(years.value) +(interestValue)}`;
     
   console.log(payoffValue)
   payoff.innerText=`Ksh.${payoffValue}`
